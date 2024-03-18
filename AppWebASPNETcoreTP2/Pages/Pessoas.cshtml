@@ -1,0 +1,30 @@
+﻿@page "/"
+@model AppWebASPNETcoreTP2.Pages.PessoasModel
+@{
+    ViewData["Title"] = "Pessoas";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Dados das Pessoas:</h2>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>CPF</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pessoa in Model.Pessoas)
+            {
+                <tr>
+                    <td>@pessoa.Nome</td>
+                    <td>@pessoa.Idade</td>
+                    <td>@pessoa.CPF</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

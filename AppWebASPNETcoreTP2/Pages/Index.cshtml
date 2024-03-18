@@ -1,7 +1,7 @@
-﻿@page "/"
+﻿@page "/Index"
 @model IndexModel
 @{
-    ViewData["Title"] = "Página do André Becker";
+    ViewData["Title"] = "Página Inicial";
 }
 
 <h1 class="text-center">@ViewData["Title"]</h1>
@@ -18,28 +18,5 @@
                 <li class="list-group-item">Seja você mesmo a mudança que deseja ver no mundo. - Mahatma Gandhi</li>
             </ul>
         </div>
-    </div>
-
-    <div class="mt-5">
-        <h2 class="mb-4">Dados das Pessoas:</h2>
-        <table class="table table-striped">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Nome</th>
-                    <th>Idade</th>
-                    <th>CPF</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var pessoa in Model.Pessoas)
-                {
-                    <tr>
-                        <td>@pessoa.Nome</td>
-                        <td>@pessoa.Idade</td>
-                        <td>@pessoa.CPF</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
     </div>
 </div>

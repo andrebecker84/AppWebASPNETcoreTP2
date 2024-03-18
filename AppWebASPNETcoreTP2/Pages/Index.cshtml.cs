@@ -11,17 +11,9 @@ namespace AppWebASPNETcoreTP2.Pages
             _logger = logger;
         }
 
-        public List<Pessoa> Pessoas { get; set; } // Lista de Pessoas
-
         public void OnGet()
         {
-            // Exemplos de inicialização de dados das pessoas
-            Pessoas = new List<Pessoa>
-            {
-                new Pessoa { Nome = "João", Idade = 30, CPF = "123.456.789-10" },
-                new Pessoa { Nome = "Maria", Idade = 25, CPF = "987.654.321-00" },
-                new Pessoa { Nome = "Pedro", Idade = 40, CPF = "456.789.123-45" }
-            };
+
         }
     }
 }
